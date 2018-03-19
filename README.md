@@ -10,8 +10,8 @@ The model architecture is as follows:
   2) Create a dictionary that maps all the unique words in the text corpora to a corresponding number, and replace the words in each            sentence with its number.
   3) Make the integers representing the sentiment into a one-hot encoded array of size equalling the number of classes (sentiments).
   4) Pass the sequences through an embedding layer that uses pre trained GloVe vectors. The resulting embedding matrix is passed on to an      LSTM layer that uses 300 hidden state units.
-  5) Add a dropout layer (here with droppout of 0.5).
-  6) Further pass the output to another LSTM and Dropout layer. and then pass it into a Dense layer with 'num_classes' units and softmax        activation.
+  5) Add a dropout layer (here with dropout of 0.5).
+  6) Further pass the output to another LSTM and Dropout layer, and then pass it into a Dense layer with 'num_classes' units and softmax        activation.
   
   Fit the model with the given data and train it for sufficient number of epochs.
   
